@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Print Implementation (TEmplate)</title>
+	<meta charset="UTF-8" />
+
+
+<style>
+
+input,h1,div{
+
+
+	margin: 50px;
+	border: 2px solid red;
+	border-radius: 10px;
+	height: 500px;
+	width: 500px;
+	font-size: 25px;
+	background-color: goldenrod;
+	padding-left: 20px;
+
+
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="my-data-div" > </div>
+
+<script type="text/javascript">
+	
+function print(data){
+
+	var mydiv=document.getElementById("my-data-div");
+	mydiv.innerHTML=mydiv.innerHTML + data + "</br>" ;
+}
+
+print("Yuvraj");
+
+
+</script>
+
+</body>
+</html>

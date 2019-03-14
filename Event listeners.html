@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event listeners</title>
+	<meta charset="UTF-8"/>
+
+
+	<style>
+
+   div{
+
+   	margin : 50px;
+   	border: 2px solid red;
+   	border-radius: 10px;
+   	height: 50px;
+   	width: 200px;
+   	background-color: goldenrod;
+   	display: inline-block;
+   	text-align: center;
+   	padding-top: 13px;
+   }
+
+	</style>
+</head>
+<body>
+
+	<div onclick="alert('Welcome to java');"> Java Training </div>
+	<div id="my-div-2"> Angular JS </div>
+	<div id="my-div-3"> MongoDB </div>
+	<div id="my-div-4"> Python</div>
+
+
+<script>
+ var mydiv2=document.getElementById("my-div-2");
+ mydiv2.addEventListener("mouseover",function(){
+
+  alert('Mouse over to Angular')
+
+});
+
+
+ var mydiv3=document.getElementById("my-div-3");
+mydiv3.addEventListener("click",function(){
+
+	alert('Mongo training is clicked') 
+});
+
+
+
+var mydiv4=document.getElementById("my-div-4");
+mydiv4=mydiv4.addEventListener("dblclick", function(){
+
+	alert('Python has been dpuble clicked')
+});
+
+</script>
+<!-- <script src="myscript.js" > </script> -->
+</body>
+</html>

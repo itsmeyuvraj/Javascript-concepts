@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Listeners</title>
+	<meta charset="UTF-8">
+
+
+<style>
+
+	input[type=button],h1,div{
+
+		margin: 50px;
+		border: 2px solid red;
+		border-radius:10px
+		height: 200px;
+		width: 200px;
+		background-color: goldenrod;
+		text-align: center;
+
+	}
+}
+</style>
+</head>
+<body>
+
+	<input type="button" value="Click here" onclick="show('button')" />
+
+	<h1 ondblclick="show('header');"> Hello guys </h1>
+
+	<div onmouseover="mouseOverShow();" onmouseout="mouseOutShow();"> Hai Guys </div>
+
+
+<script>
+
+	function show(source){
+
+		//alert(source + 'has been clicked');
+
+		console.log(source + "has been clicked");
+
+	}
+
+	function mouseOverShow(){
+
+		//alert(Mouse is over hai guys);
+
+		console.log("Mouse is over Hai guys");
+
+
+
+	}
+
+	function mouseOutShow(){
+
+		//alert("Mouse is out of Hai guys");
+
+		console.log("Mouse is out of HAi guys");
+	}
+</script>
+ 
+</body>
+</html>

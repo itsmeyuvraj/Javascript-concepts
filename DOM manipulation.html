@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM manipulation</title>
+	<meta charset="UTF-8" >
+
+
+	<style type="text/css">
+		
+
+		input,h1,div{
+
+
+
+	margin: 50px;
+	border: 2pz solid red;
+	border-radius: 10px;
+	height: 50px;
+	width: 500px;
+	font-size: 25px;
+	background-color: goldenrod;
+	text-align: center;
+		
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1 id="hello" > Hello Guys </h1>
+
+	<div id="hai" > Hai Guys </div>
+
+	<input type="button" value="Change Text Now " onclick="changeText()" />
+
+
+	<script type="text/javascript">
+		
+
+		function changeText(){
+
+
+			var helloH1= document.getElementById("hello");
+			helloH1.innerHTML= "Welcome to coursecube";
+			var haiDiv=document.getElementById("hai");
+			haiDiv.innerHTML = "Welcome to JLC";
+		}
+
+		//changeText();
+
+
+	</script>
+
+</body>
+</html>
